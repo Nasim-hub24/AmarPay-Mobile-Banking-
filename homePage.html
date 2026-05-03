@@ -1,16 +1,57 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="nord">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME PAGE</title>
+
+    <!-- daisy ui and tailwind -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- fonts OUTFIT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"     rel="stylesheet">
+
+    <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- adding theme -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        *{
+            font-family: "Outfit", sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <h1>
-        you are in <br>
-        home page 
-    </h1>
-    <!-- <script type="module" src="homePage.html"></script> -->
+<body class="min-h-screen max-w-md bg-base-200 mx-auto">
+    <header class="border-b-2 border-gray-400">
+        <section class="w-11/12 mx-auto py-3 flex justify-between items-center">
+            <div class="left flex gap-1">
+                <div class="logo w-[100px]">
+                    <img src="assets/amat pay 01.png" alt="">
+                </div>
+
+                <div class="banalce-info">
+                    <h2 class="text-2xl font-bold">
+                        $<samp id="balance">4500</samp>
+                    </h2>
+                    <p class="text-neutral-400">
+                        Available Balance
+                    </p>
+                </div>
+            </div>
+
+            <div class="right">
+                <a href="/index.html" class="btn btn-dash btn-accent">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    log out
+                </a>
+            </div>
+        </section>
+    </header>
 </body>
 </html>
