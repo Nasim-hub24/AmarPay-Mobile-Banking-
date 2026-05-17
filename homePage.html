@@ -28,7 +28,7 @@
     </style>
 </head>
 <body class="min-h-screen max-w-md bg-base-200 mx-auto">
-    <header class="border-b-2 border-gray-400">
+    <header class="border-b-2 border-gray-400 sticky top-0 bg-base-200 z-10">
         <section class="w-11/12 mx-auto py-3 flex justify-between items-center">
             <div class="left flex gap-1">
                 <div class="logo w-[100px]">
@@ -112,19 +112,19 @@
             <div class="card-body">
                 <fieldset class="fieldset">
                   <label class="label font-bold text-neutral-950 text-lg">Agent Number</label>
-                  <input id="input-number" maxlength="11" minlength="11" type="text" class="input rounded-full bg-base-200 " placeholder="Enter your number" />
+                  <input id="cashOut-number" maxlength="11" minlength="11" type="text" class="input rounded-full bg-base-200 " placeholder="Enter your number" />
 
                   <br>
 
                   <label class="label font-bold text-neutral-950 text-lg">Amount</label>
-                  <input id="cashout-number" maxlength="11" minlength="11" type="number" class="input rounded-full bg-base-200 " placeholder="Enter amount" />
+                  <input id="cashout-amount" maxlength="11" minlength="11" type="number" class="input rounded-full bg-base-200 " placeholder="Enter amount" />
 
                     <br>
 
                   <label class="label font-bold text-neutral-950 text-lg">Enter pin number</label>
-                  <input id="input-pin" maxlength="4" minlength="4" type="password" class="input rounded-full bg-base-200 " placeholder="Enter 4 digit pin" />
+                  <input id="cashOut-pin" maxlength="4" minlength="4" type="password" class="input rounded-full bg-base-200 " placeholder="Enter 4 digit pin" />
 
-                  <button id="login-btn" class="btn btn-primary mt-4 rounded-full">Withdraw Amount</button>
+                  <button id="cashOut-btn" class="btn btn-primary mt-4 rounded-full">Withdraw Amount</button>
                 </fieldset>
             </div>
         </div>
