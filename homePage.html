@@ -130,6 +130,37 @@
         </div>
     </section>
 
+    <section id="add-money" class="w-11/12 mx-auto py-10 space-y-3">
+        <h1 class="font-bold text-neutral-950 py-5 text-xl ">
+                Add Money
+        </h1>
+        <div class="card-body">
+            <fieldset class="fieldset">
+                <label class="label font-bold text-neutral-950      text-lg">Select Bank</label>
+                <select class="select rounded-full bg-base-200">
+                    <option disabled selected>Select Your bank</option>
+                    <option>Brack bank</option>
+                    <option>City bank</option>
+                    <option>Bank Asia</option>
+                </select>
+                <label class="label font-bold text-neutral-950      text-lg">Bank Acount Number</label>
+                  <input id="addMoney-number" maxlength="11" minlength="11" type="text" class="input rounded-full bg-base-200 " placeholder="Enter your number" />
+
+                  <br>
+
+                  <label class="label font-bold text-neutral-950 text-lg">Amount</label>
+                  <input id="addMoney-amount" maxlength="11" minlength="11" type="number" class="input rounded-full bg-base-200 " placeholder="Enter amount" />
+
+                    <br>
+
+                <label class="label font-bold text-neutral-950 text-lg">Enter pin number</label>
+                <input id="addMoney-pin" maxlength="4" minlength="4" type="password" class="input rounded-full bg-base-200 " placeholder="Enter 4 digit pin" />
+
+                <button id="cashOut-btn" class="btn btn-primary mt-4 rounded-full">Withdraw Amount</button>
+            </fieldset>
+        </div>
+    </section>
+
     <script src="./SCRIPT JS/machine.js"></script>
     <script src="/SCRIPT JS/cashout.js"></script>
 </body>
