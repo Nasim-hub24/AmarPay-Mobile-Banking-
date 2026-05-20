@@ -1,5 +1,44 @@
 //console.log('connection successful')
 
+// CODE WITH ONE COMMON MACHINE
+document.getElementById('cashOut-btn').addEventListener('click',function(){
+
+    //1-- GET THE AGENT NUMBER AND VALIDATE
+    const cahoutNumber = getValueFromInput('phoneNumber');
+    //2-- GET THE AMOUNT
+    const cashOutAmount = getValueFromInput('amount');
+
+    //3-- get THE CURRENT BALANCE
+    const balanceElement = document.getElementById('balance');
+    const currentBalance = balanceElement.innerText;
+    console.log(currentBalance);
+
+    //4-- CALCULATE BALANCE
+    const newBalance = Number(currentBalance)- Number(amount);
+    console.log(newBalance);
+    if(newBalance < 0)
+    {
+        alert("invalid balance");
+    }
+    
+    const pin = cashOutPinInput.value;
+
+    if(pin === '1234')
+    {
+        alert('correct pin');
+        console.log('new balance', newBalance);
+        balanceElement.innerText = newBalance;
+    }
+    else
+    {
+        alert('invalid pin');
+        return;
+    }
+
+})
+
+
+/*  
 document.getElementById('cashOut-btn').addEventListener('click', function(){
 
     //1-- get the agent number
@@ -46,3 +85,4 @@ document.getElementById('cashOut-btn').addEventListener('click', function(){
         return;
     }
 })
+*/
